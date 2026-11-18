@@ -1,0 +1,18 @@
+export default function Header() {
+  return (
+    <header className="header">
+      <nav>
+        <div className="icon-box">
+          <img src="./src/assets/react.svg" alt="React logo" />
+          <span className="heading">React facts</span>
+        </div>
+
+        <ul className="nav-list">
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+  );
+}

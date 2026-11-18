@@ -1,9 +1,9 @@
 :root {
   --text: #6b6375;
   --text-h: #08060d;
-  --bg: #fff;
+  --bg: #0f0101;
   --border: #e5e4e7;
-  --code-bg: #f4f3ec;
+  --code-bg: #131001;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
@@ -11,8 +11,8 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -52,12 +52,13 @@
 
 body {
   margin: 0;
+  font-family: Inter, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #root {
   width: 1126px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
   text-align: left;
   border-inline: 1px solid var(--border);
   min-height: 100svh;
@@ -108,4 +109,60 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+.header {
+  height: 90px;
+  padding: 30px 25px;
+  background-color: #1d1150;
+  width: 100%;
+}
+.react-logo {
+  width: 40px;
+  margin-right: 7px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+
+  list-style-type: none;
+  margin-left: 10px;
+  padding: auto;
+  gap: 12px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  color: #f0eef5;
+}
+.heading {
+  color: #61dafb;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.icon-box {
+  gap: 10px;
+}
+
+main {
+  padding: 60px 30px;
+}
+
+main > h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+
+.fun-facts{
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.fun-facts > li {
+    margin-block: 10px;
+    line-height: 19px;
 }
